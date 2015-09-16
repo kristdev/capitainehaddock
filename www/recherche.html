@@ -1,0 +1,25 @@
+<div class="bar bar-subheader bar-positive" ng-controller="backController">
+    <div class="row row-center">
+        <div class="col" style="padding-top:0px; "><button class="button button-light" ng-click="myGoBack()" style="margin-top:-5px;"><i class="icon ion-android-arrow-back"></i> </button></div>
+        <div class="col col-50 text-center"><h2 class="title">Recherche</h2></div>
+        <div class="col text-right"></div>
+    </div>
+</div>
+<ion-content class="padding" style="padding-top:50px; color:#444;" ng-controller="rechercheController">
+    <div class="text-center" style="font-size:16px;">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Search" ng-model="recherche" ng-keyup="keywordsearched()">
+            </label>
+        </div>
+        
+        <ul class="list" style="text-align:justify">
+            <li class="item" ng-repeat="injure in jurons | filter:recherche">
+            {{injure}}
+            </li>
+        </ul>
+        
+        <p ng-controller="backController"><button class="button icon-left ion-android-arrow-back button-positive" ng-click="myGoBack()">Retour</button></p>
+    </div>
+</ion-content>

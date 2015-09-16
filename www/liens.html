@@ -1,0 +1,62 @@
+<div class="bar bar-subheader bar-positive" ng-controller="backController">
+    <div class="row row-center">
+        <div class="col" style="padding-top:0px; "><button class="button button-light" ng-click="myGoBack()" style="margin-top:-5px;"><i class="icon ion-android-arrow-back"></i></button></div>
+        <div class="col col-50 text-center"><h2 class="title">Liens utiles</h2></div>
+        <div class="col text-right"></div>
+    </div>
+</div>
+<ion-content class="padding" style="padding-top:50px; color:#444; font-size:16px;"> 
+    <ion-slide-box on-slide-changed="slideHasChanged($index)">
+        <ion-slide>
+            <div class="box">
+               <div class="col text-center">
+                    <div class="border">   
+                        <a href="#" onclick="window.open('http://fr.wikipedia.org/wiki/Les_Aventures_de_Tintin', '_system', 'location=yes'); return false;"><img src="img/tintin.jpg" alt="tintin" height="100px"></a><br>Tintin
+                    </div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="box">
+                <div class="col text-center">
+                    <div class="border">  
+                        <a href="#" onclick="window.open('http://fr.wikipedia.org/wiki/Capitaine_Haddock', '_system', 'location=yes'); return false;"><img src="img/capitaine-haddock.jpeg" alt="Capitaine Haddock" height="100px"></a><br>Capitaine Haddock
+                    </div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="box">
+                <div class="col text-center">
+                    <div class="border">
+                        <a href="#"  onclick="window.open('http://fr.wikipedia.org/wiki/Herg%C3%A9', '_system', 'location=yes'); return false;"><img src="img/herge.jpg" alt="Herge" height="100px"></a><br>Hergé
+                    </div>
+                </div>
+            </div>
+        </ion-slide>
+       <ion-slide>
+            <div class="box">
+                <div class="col text-center">
+                    <div class="border">
+                        <a href="#" onclick="window.open('http://fr.wikipedia.org/wiki/Vocabulaire_du_capitaine_Haddock', '_system', 'location=yes'); return false;"><img src="img/haddock-insultant.png" alt="Haddock insultant" height="100px"></a><br>Vocabulaire Capitaine
+                    </div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="box">
+                <div class="col text-center">
+                    <div class="border">
+                        <a href="#" onclick="window.open('http://lutin.lu', '_system', 'location=yes'); return false;"><img src="img/Lutin-Tech_logo-pantone.png" alt="Lutin Technologies" height="100px"></a><br>Lutin Technologies
+                    </div>
+                </div>
+            </div>
+        </ion-slide>
+    </ion-slide-box>
+    <br><br>
+    <div class="text-center" ng-controller="backController">
+        <p><a href="#" onclick="window.open('http://www.lutin.lu', '_system', 'location=yes'); return false;">http://www.lutin.lu</a></p>
+        <p><a href="#" onclick="window.open('http://www.lutin-technologies.com', '_system', 'location=yes'); return false;">http://www.lutin-technologies.com</a></p>
+        <p><button class="button icon-left ion-android-arrow-back button-positive" ng-click="myGoBack()">Retour</button></p>
+    </div>
+</ion-content>

@@ -1,0 +1,86 @@
+/* Empty. Add your own CSS if you like */
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.border{
+    border: 1px solid #ccc;
+    height:160px;
+}
+
+.CirkelPro-Bold { 
+	font-family: CirkelPro-Bold;
+	font-weight: bold;
+	font-style: normal;
+    font-size: 23px;
+    
+}
+.CirkelPro-Light { 
+	font-family: CirkelPro-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+.CirkelPro-Medium { 
+	font-family: CirkelPro-Medium;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 { 
+	font-family: CirkelPro-Medium; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #ccc;
+}
+
+.tri-down {
+
+    /* Styling block element, not required */
+    position: relative;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #999;
+    background: #f3f3f3;
+  }
+
+  /* Required for Down Triangle */
+  .tri-down:before, .tri-down:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+  }
+
+  /* Stroke */
+  .tri-down:before {
+    bottom: -16px;
+    right: 21px;
+
+    /* If 1px darken stroke slightly */
+    border-top-color: #777;
+    border-width: 16px;
+  }
+
+  /* Fill */
+  .tri-down:after {
+    bottom: -15px;
+    right: 22px;
+    border-top-color: #f3f3f3;
+    border-width: 15px;
+  }

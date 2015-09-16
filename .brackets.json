@@ -1,0 +1,9 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/wamp/www/capitainehaddock/gulpfile.js",
+        "C:/wamp/www/capitainehaddock/www/ng-cordova.min.js",
+        "C:/wamp/www/capitainehaddock/www/lib/taffy/taffy-min.js",
+        "C:/wamp/www/capitainehaddock/www/lib/ionic/js/ionic.min.js",
+        "C:/wamp/www/capitainehaddock/www/lib/ionic/js/ionic.js"
+    ]
+}
