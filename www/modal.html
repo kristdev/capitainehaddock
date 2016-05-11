@@ -1,1 +1,21 @@
-<ion-modal-view><ion-header-bar><h1 class="title text-center"><center>Notification Journalière</center></h1></ion-header-bar><ion-content><br><br><div class=row><p>Voulez-vous recevoir chaque jour sur votre smartphone une notification avec une nouvelle bordée d’insultes et jurons ?</div><br><div class=row><div class="button-bar button-light" ng-controller=NotificationCtrl><a class="button icon-left ion-android-checkbox-outline" ng-click=add()>Oui</a> <a class="button icon-left ion-close" ng-click=closeModal()>Fermer</a></div></div></ion-content></ion-modal-view>
+<ion-modal-view>
+    <ion-header-bar>
+  		<h1 class="title text-center"><center>Notification Journalière</center></h1>
+    </ion-header-bar>
+    <ion-content>
+    	<br><br>
+    	<div class="row">
+    		<p>
+    			Voulez-vous recevoir chaque jour sur votre smartphone une notification avec une nouvelle bordée d’insultes et jurons ?
+			</p>
+    	</div>
+    	<br>
+    	<div class="row">
+	      	<div class="button-bar button-light" ng-controller="NotificationCtrl">
+	            <a class="button icon-left ion-android-checkbox-outline" ng-click="add()">Oui</a>
+	            <a class="button icon-left ion-close" ng-click="closeModal()">Fermer</a>
+	            <!-- <button class="button" ng-click="isScheduled()">Is Scheduled</button> -->
+	        </div>
+    	</div>
+    </ion-content>
+</ion-modal-view>   

@@ -1,1 +1,30 @@
-<ion-content class=padding style=padding-top:50px><div class=text-center ng-controller=mainwindowController><div class="tri-down positive" style="height:100px;border:#ccc solid 1px;font-size:18px;padding:10px;font-style:italic;font-weight:300"><p>{{bordeeresult}}</div><br><img id=captainspeaking src=img/haddock-insultant.png alt="haddock insultant"><br><br><center><button class="button col col-50 button-positive" ng-click="captainInsult(); bordeeinjures();">Tonnere de Brest!</button></center><br><div class="button-bar button-light"><a class="button icon-left ion-loop" href=#/uneparjour>Une par jour</a> <a class="button icon-left ion-search" href=#/recherche>Rechercher</a></div><br><div class=button-bar><a class="button icon-left ion-document-text" href=#/savoir>A Savoir</a> <a class="button icon-left ion-bookmark" href=#/liens>Liens</a></div></div></ion-content>
+<ion-content class="padding" style="padding-top:50px;">
+    <div class="text-center" ng-controller="mainwindowController">
+        <!--<div class="text-positive" style="height:100px; border:#CCC solid 1px; font-size:18px; padding:10px; font-style:italic; font-weight:300; color:#387ef5;">
+            <p>Vermicelle! Gros plein de soupe! Saltimbanque! Lépidoptère! Athlète complet!</p>
+        </div>-->
+        <!-- Element you want to add a down triangle too. -->
+        <div class="tri-down positive" style="height:100px; border:#CCC solid 1px; font-size:18px; padding:10px; font-style:italic; font-weight:300;"><p>{{bordeeresult}}</p></div>
+        <!--<center>  
+            <div class="arrow-down"></div>
+        </center>-->
+        <br>
+        <img id="captainspeaking" src="img/haddock-insultant.png" alt="haddock insultant">
+        <br><br>
+        <center>  
+            <button class="button col col-50 button-positive" ng-click="captainInsult(); bordeeinjures();">
+                Tonnere de Brest!
+            </button>
+        </center>
+        <br>
+        <div class="button-bar button-light">
+            <a class="button icon-left ion-loop" href="#/uneparjour">Une par jour</a>
+            <a class="button icon-left ion-search" href="#/recherche">Rechercher</a>
+        </div>
+        <br>
+        <div class="button-bar">
+            <a class="button icon-left ion-document-text" href="#/savoir">A Savoir</a>
+            <a class="button icon-left ion-bookmark" href="#/liens">Liens</a>
+        </div>
+    </div>
+</ion-content>

@@ -1,1 +1,50 @@
-<div class="bar bar-subheader bar-positive" ng-controller=backController><div class="row row-center"><div class=col style=padding-top:0><button class="button button-light" ng-click=myGoBack() style=margin-top:-5px><i class="icon ion-android-arrow-back"></i></button></div><div class="col col-50 text-center"><h2 class=title>Une par jour</h2></div><div class="col text-right"></div></div></div><ion-content class=padding style=padding-top:50px;color:#444><div class=text-center style=font-size:16px><div class=row><p>Voulez-vous recevoir chaque jour sur votre smartphone une notification avec une nouvelle bordée d’insultes et jurons ?</div><br><div ng-controller=NotificationController><div class=row ng-hide=activation><div class="button-bar button-light"><button class="button icon-left ion-android-checkbox-outline" ng-click=add()>Activer</button></div></div><div class=row ng-show=activation><div class="button-bar button-light"><button class="button icon-left ion-close" ng-click=desactiver()>Désactiver</button></div></div><br><div class=row><div style=background-color:grey ng-hide=activation><div class="item item-text-wrap">Aucune notification n'est activée, pour en activer, veuillez cliquer sur le bouton "Activer"</div></div><div style=background-color:grey ng-show=activation><div class="item item-text-wrap">Une notification journalière a été activée, pour la désactiver, veuillez cliquer sur le bouton "Désactiver"</div></div></div></div><p ng-controller=backController><button class="button icon-left ion-android-arrow-back button-positive" ng-click=myGoBack()>Retour</button></div></ion-content>
+<div class="bar bar-subheader bar-positive" ng-controller="backController">
+    <div class="row row-center">
+        <div class="col" style="padding-top:0px; ">
+            <button class="button button-light" ng-click="myGoBack()" style="margin-top:-5px;"><i class="icon ion-android-arrow-back"></i></button>
+        </div>
+        <div class="col col-50 text-center">
+            <h2 class="title">Une par jour</h2></div>
+        <div class="col text-right"></div>
+    </div>
+</div>
+<ion-content class="padding" style="padding-top:50px; color:#444;">
+    <div class="text-center" style="font-size:16px;">
+
+        <div class="row">
+            <p>
+                Voulez-vous recevoir chaque jour sur votre smartphone une notification avec une nouvelle bordée d’insultes et jurons ?
+            </p>
+        </div>
+        <br>
+        <div ng-controller="NotificationController">
+            <div class="row" ng-hide="activation">
+                <div class="button-bar button-light">
+                    <button class="button icon-left ion-android-checkbox-outline" ng-click="add()">Activer</button>
+                </div>
+            </div>
+            <div class="row" ng-show="activation">
+                <div class="button-bar button-light">
+                    <button class="button icon-left ion-close" ng-click="desactiver()">Désactiver</button>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div style="background-color:grey;" ng-hide="activation">
+                    <div class="item item-text-wrap">
+                        Aucune notification n'est activée, pour en activer, veuillez cliquer sur le bouton "Activer"
+                    </div>
+                </div>
+                <div style="background-color:grey;" ng-show="activation">
+                    <div class="item item-text-wrap">
+                        Une notification journalière a été activée, pour la désactiver, veuillez cliquer sur le bouton "Désactiver"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p ng-controller="backController">
+            <button class="button icon-left ion-android-arrow-back button-positive" ng-click="myGoBack()">Retour</button>
+        </p>
+    </div>
+</ion-content>
